@@ -1,0 +1,89 @@
+{
+	// Place your LeetCode workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"require test": {
+		"scope": "javascript,typescript",
+		// "prefix": "require test",
+		"prefix": "rt",
+		"body": "var Test = require('./Common/Test');",
+	},
+	"require matrix": {
+		"scope": "javascript,typescript",
+		// "prefix": "require matrix",
+		"prefix": "rm",
+		"body": "var { Matrix } = require('./Common/Matrix');",
+	},
+
+	"require heap": {
+		"scope": "javascript,typescript",
+		// "prefix": "require heap",
+		"prefix": "rh",
+		"body": "var { Heap } = require('./Common/Heap');"
+	},
+	// "test function": {
+	"run function": {
+		"scope": "javascript,typescript",
+		// "prefix": "function test",
+		"prefix": "run",
+		"body": [
+			// "function test(${2:params}) {",
+			// "\tTest.test(${1:fun}, $2);",
+			"function run(${2:params}) {",
+			"\tTest.run(${1:fun}, $2);",
+			"}\n\n",
+		]
+	},
+	"test function with testcase": {
+		"scope": "javascript,typescript",
+		"prefix": "testcase",
+		"body": [
+			// "function testWithTestcase(${2:id}) {",
+			// "\tTest.testWithTestcase(${1:fun}, $2);",
+			"function testWithTestcase(id) {",
+			"\tTest.testWithTestcase(${1:fun}, id);",
+			"}\n\n",
+		]
+	},
+	"test function with testcase V2": {
+		"scope": "javascript,typescript",
+		"prefix": "testcaseV2",
+		"body": [
+			"function testWithTestcase(id) {",
+			"\tTest.testWithTestcaseV2(${1:fun}, id);",
+			"}\n\n",
+		]
+	},
+	"sequenceTest function": {
+		"scope": "javascript,typescript",
+		"prefix": "sequenceTest",
+		"body": [
+			"function sequenceTest(ops, params) {",
+			"\tTest.testWithInstructions(${1:class}, ops, params);",
+			"}",
+		]
+	},
+	"run in sequence": {
+		"scope": "javascript,typescript",
+		"prefix": "runInSequence",
+		"body": [
+			"function runInSequence(ops, params) {",
+			"\tTest.runWithInstructions(${1:class}, ops, params);",
+			"}",
+		]
+	}
+	
+}

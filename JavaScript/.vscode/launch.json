@@ -1,0 +1,64 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Program",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        // "program": "${workspaceFolder}/src/Infix2PostfixConverter.ts",
+        // "program": "${workspaceFolder}/src/RouteCalculator.ts",
+        // "program": "${workspaceFolder}/src/RouteCalculator.ts",
+        // "program": "${workspaceFolder}/src/Ca",
+        // "program": "${workspaceFolder}/Infix2PostfixConverter.ts",
+        // "program": "${workspaceFolder}/src/SerializeAndDeserializeBinaryTree.js",
+        // "program": "${workspaceFolder}/src/InterleavingString/InterleavingString.js",
+        // "program": "${workspaceFolder}/src/InterleavingString/InterleavingStringR.V2.js",
+        // "program": "${workspaceFolder}/src/InterleavingString/InterleavingStringR.js",
+        // "program": "${workspaceFolder}/src/Intersection.js",
+        // "program": "${workspaceFolder}/src/InsertionSortList.js",
+        // "program": "${workspaceFolder}/src/ParsingABooleanExpression.js",
+        // "program": "${workspaceFolder}/src/ParseLispExpression.js",
+        // "program": "${workspaceFolder}/src/ArithmeticSlicesII.js",
+        // "program": "${workspaceFolder}/src/BinaryTreeInorderTraversal.js",
+        // "program": "${workspaceFolder}/src/BinaryTreePostorderTraversal.js",
+        // "program": "${workspaceFolder}/src/LargestRectangleInHistogram.js",
+        // "program": "${workspaceFolder}/src/LongestIncreasingPathInMatrix.js",
+        // "program": "${workspaceFolder}/src/EnglishInt.js",
+        // "program": "${workspaceFolder}/src/ReachingPoints.js",
+        // "program": "${workspaceFolder}/src/ValidateBinarySearchTree.js",
+        // "program": "${workspaceFolder}/src/SudokuSolver.js",
+        // "program": "${workspaceFolder}/src/SudokuSolver.R.tidy.js",
+        // "program": "${workspaceFolder}/src/NumberOfAtoms.R.js",
+        // "program": "${workspaceFolder}/src/WildcardMatching.R.js",
+        // "program": "${workspaceFolder}/src/SelfCrossing.js",
+        // "program": "${workspaceFolder}/src/JumpGameII.js",
+        // "program": "${workspaceFolder}/src/AllO`oneDataStructure.js",
+        // "program": "${workspaceFolder}/src/LFUCache.js",
+        // "program": "${workspaceFolder}/src/InsertDeleteGetRandom.js",
+        // "program": "${workspaceFolder}/src/MinimumCostToValidPath.js",
+        // "program": "${workspaceFolder}/src/CherryPickup.js",
+        // "program": "${workspaceFolder}/src/AddAndSearchWord.memo.js",
+        // "program": "${workspaceFolder}/src/WordSearchII.js",
+        // "program": "${workspaceFolder}/src/WordSearch.js",
+        // "program": "${workspaceFolder}/src/PerfectRectangle.js",
+        // "program": "${workspaceFolder}/src/DataStreamAsDisjointIntervals.js",
+        "program": "${workspaceFolder}/src/DataStreamAsDisjointIntervals.V4.js",
+
+        // "preLaunchTask": "tsc: build - tsconfig.json",
+        "outFiles": [
+            // "${workspaceFolder}/dist/**/*.js"
+            "${workspaceFolder}/dist/*.js"
+            // "${workspaceFolder}/**/*.js"
+            // "${workspaceFolder}/dist/Infix2PostfixConverter.js"
+            // "${fileDirname}/*.js"
+        ]
+        // "program": "${file}",
+        // "console": "integratedTerminal",
+        // "outFiles": ["${fileDirname}/*.js"]
+    }]
+}

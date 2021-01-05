@@ -1,0 +1,54 @@
+// https://leetcode-cn.com/problems/trapping-rain-water/
+var trap = function (height) {
+    const stack = [];
+    let total = 0;
+
+    for (const bar of height) {
+        console.log('\n');
+        console.log('start');
+
+        console.log(stack);
+        console.log({ bar });
+        console.log({ total });
+
+
+
+        if (stack.length == 0) {
+            if (bar > 0) {
+                stack.push(bar);
+            }
+        }
+        else {
+            const first = stack[0];
+            if (bar < first) {
+                if (bar > stack[stack.length - 1]) {
+                    const firstIndex = stack.findIndex(e => e < bar);
+                    for (let index = firstIndex; index < stack.length; index++) {
+                        total += bar - stack[index];
+                        stack[index] = bar;
+                    }
+                }
+            }
+            else {
+                for (let index = 1; index < stack.length; index++) {
+                    total += first - stack[index];
+                }
+                stack.splice(0);
+            }
+            stack.push(bar);
+        }
+
+        console.log('end:', { total });
+        console.log(stack);
+    }
+    return total;
+};
+
+function test1(input) {
+    console.log(trap(input));
+}
+
+input1 = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
+
+
+test1(input1);
